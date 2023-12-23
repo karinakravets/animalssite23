@@ -1,0 +1,190 @@
+<!doctype html>  
+<html lang="ru">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=deviice-width,initial-scale=1">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="my.css" rel="stylesheet">
+      <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-">
+              <div class="container-fluid">
+                <a class="navbar-brand"><img src="logo.png" class="w-25 rounded-3" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="vxod.html">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="registr.html">Регистрация</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="add.html">Добавить объявление</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="search.html">Поиск по объявлениям</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" list="pets" placeholder="Поиск" aria-label="Search">
+                    <button class="btn btn-primary"  onclick="" style="background-color: rgb(218, 191, 141);">Поиск</button> 
+                   </header>
+                    <datalist id="pets">
+                      <option value="Кошка">
+                      </option><option value="Собака">
+                      </option><option value="Корова">
+                      </option><option value="Крокодил">
+                      </option><option value="Сова">
+                    </option></datalist>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      
+        
+        <main style="min-height: 70vh;">
+            <h2 class="text-center text-white p-3" style="background-color: rgb(218, 191, 141);">Найденные животные</h2>
+            <div id="carouselExampleIndicators" class="carousel slide m-auto bg-success bg-opacity-25 w-sm-100 p-2" data-bs-ride="carousel" style="min-height: 400px;">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item "> 
+                  <h2 class="text-center">Найдены собаки</h2>
+                  <div class="d-flex justify-content-center">
+                    
+                  <div class='m-2'>
+                    
+                  <img src="dog.jpg" class="d-block " alt="Собака" style="width: 290px;">
+                  <div class="">Найдена в примоском районе</div>
+               </div>
+               <div>
+                  
+                <img src="dog1.jpg" class="d-block" alt="cat" style="width: 400px;">
+                <div class="text-center">Найдена в красносельском районе</div>
+                </div>
+              </div>
+            </div>
+                <div class="carousel-item "> 
+                <h2 class="text-center">Найдена кошка</h2>
+                <div class="d-flex justify-content-center">
+                <img src="cat.jpg" class="d-block" style="width: 400px;">
+                  </div><p class="text-center">Найдена маленькая 
+                    кошечка в фрунзенском районе </p>
+                </div>
+              
+                <div class="carousel-item active">
+                  <h2 class="text-center">Найдена кошка </h2>
+                  <div class="d-flex justify-content-center">
+                  <img src="cat1.jpg" class="d-block"  style="width: 400px;">
+                  </div>
+                  <p class="text-center"> была утеряна в приморском районе</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+              </button>
+            </div>
+        
+          <h2 class="text-center text-white p-3  " style="background-color: rgb(218, 191, 141);">Карточки найденных животных</h2>
+          <div class="d-flex flex-row flex-wrap">
+            <div class="d-flex flex-row flex-wrap border m-3 p-3" style="min-width: 300px; width: 45%; background-color: rgb(218, 191, 141);">
+              <img src="cat1.jpg" class="w-75" alt="рисунок животного">
+              <p class="w-50" style="min-width: 250px;">id:</p>
+              <p class="w-50" style="min-width: 250px;">14</p>
+        
+              <p class="w-50" style="min-width: 250px;">Вид животного:</p>
+              <p class="w-50" style="min-width: 250px;"> Кошка</p>
+        
+              <p class="w-50" style="min-width: 300px;">Описание:</p>
+              <p class="w-50" style="min-width: 300px;">Потерялась кошка, пушистая, разноцветный окрас. Любит играть, ласковая.</p>
+        
+              <p class="w-50" style="min-width: 300px;">Номер чипа:</p>
+              <p class="w-50" style="min-width: 300px;">239-spb</p>
+        
+              <p class="w-50" style="min-width: 300px;">Район:</p>
+              <p class="w-50" style="min-width: 300px;">Приморский</p>
+        
+              <p class="w-50" style="min-width: 300px;">Дата:</p>
+              <p class="w-50" style="min-width: 300px;">13-07-2023</p>
+            </div>
+            <div class="d-flex flex-row flex-wrap border m-3 p-3" style="min-width: 300px; width: 45%; background-color: rgb(218, 191, 141);">
+              <img src="dog2.jpg" class="w-75" alt="рисунок животного">
+              <p class="w-50" style="min-width: 250px;">id:</p>
+              <p class="w-50" style="min-width: 250px;">18</p>
+        
+              <p class="w-50" style="min-width: 250px;">Вид животного:</p>
+              <p class="w-50" style="min-width: 250px;"> Собака</p>
+        
+              <p class="w-50" style="min-width: 300px;">Описание:</p>
+              <p class="w-50" style="min-width: 300px;"> собака долго искала своего хозяина в центре, была сильно напугана </p>
+        
+              <p class="w-50" style="min-width: 300px;">Номер чипа:</p>
+              <p class="w-50" style="min-width: 300px;">240-spb</p>
+        
+              <p class="w-50" style="min-width: 300px;">Район:</p>
+              <p class="w-50" style="min-width: 300px;">Центральный</p>
+        
+              <p class="w-50" style="min-width: 300px;">Дата:</p>
+              <p class="w-50" style="min-width: 300px;">14-12-2023</p>
+            </div>
+          </div>
+        
+          <h2 class="text-center text-white " style="background-color: rgb(218, 191, 141);">Подписка на новости</h2>
+          <form class="row g-3 needs-validation w-75 m-auto">
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="email" class="form-control" id="validationCustom01" value="ivan@gmail.com" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+              <div id="emailHelp" class="form-text">Мы никогда не делимся Вашими e-mail ни с кем.</div>
+            </div>
+         <div class="col-md-6 col-sm-12"></div>
+            <button type="submit" class="btn " style="background-color: rgb(218, 191, 141);">Подписаться</button>
+       
+            </div>
+          </form>
+        </main>
+        <style>
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          .content {
+            min-height: 10%;
+            margin-bottom: 1px; 
+          }
+          .footer {
+            background-color: rgb(218, 191, 141);
+            text-align: center;
+            padding: 10px;
+            height: 80px; 
+          }
+        </style>
+      </head>
+      <body>
+        <div class="content">
+  
+        </div>
+        <footer class="footer">
+          <p>Все права защищены</p>
+          <p>Karina Kravets</p>
+        </footer>
+        </body>
+    </html>
